@@ -1,0 +1,6 @@
+# skills section data
+
+label: Data analytics
+id : data
+aspects: Pandas, Scikit Learn, SQL, Data Mining, Statistics, Data Visualization, R
+percentage: 95, 70, 90, 70, 60, 75, 70

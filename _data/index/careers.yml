@@ -1,0 +1,85 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+name: 
+    detail: Graduation from RPI
+    i18n: company_a
+  desc:
+    detail: I will be graduating with my Master's degree in Business Analytics from Rensselaer Polytechnic Institute in December 2018.
+    i18n: company_a_desc
+  date:
+    detail: Dec. 2018
+    i18n: company_a_date
+  job:
+    detail: Student
+    i18n: company_a_job
+  icon: fa-graduation-cap
+
+name: 
+    detail: Community Data Scientist at Method Data Science
+    i18n: company_a
+  desc:
+    detail: I am receiving data sceience training from senior data scientists in the industry and working with a group of aspiring data scientists to solve problems and contribute to the data science community.
+    i18n: company_a_desc
+  date:
+    detail: Oct. 2018
+    i18n: company_a_date
+  job:
+    detail: Community Data Scientist
+    i18n: company_a_job
+  icon: fa-laptop-code
+
+- name: 
+    detail: Internship at Acxiom Corporation
+    i18n: company_a
+  desc:
+    detail: I worked as a Data Analyst Intern at Shanghai office of Acxiom Corporation, a leading analytics service provider, where I worked with Insight team that delivers CRM and digital marketing services for brands owned by L'Oreal.
+    i18n: company_a_desc
+  date:
+    detail: May. 2018
+    i18n: company_a_date
+  job:
+    detail: Data Analyst Intern
+    i18n: company_a_job
+  icon: fa-black-tie
+
+- name:
+    detail: Starting of graduate program
+    i18n: company_b
+  desc:
+    detail: I came to United States and started my pursuit in master's degree in Business Analytics at Rensselaer Polytechnic Institute.
+    i18n: company_b_desc
+  date:
+    detail: Aug. 2017
+    i18n: company_b_date
+  job:
+    detail: Student
+    i18n: company_b_job
+  icon: fa-far-school
+
+- name:
+    detail: Graduation from ECUST
+    i18n: company_b
+  desc:
+    detail: I graduated with a bachelor's degree in Management Information Systems from East China University of Science and Technology, where I gained knowledge and developed understanding into business and technologies.
+    i18n: company_b_desc
+  date:
+    detail: Jun. 2017
+    i18n: company_b_date
+  job:
+    detail: Student
+    i18n: company_b_job
+  icon: fa-graduation-cap
+
+- name:
+    detail: Market Research Intern at Auchan Retail
+    i18n: company_b
+  desc:
+    detail: I worked as a Market research Intern at Auchan, a Fortune 500 retail company, where I faciliated decision making by conducting market researches.
+    i18n: company_b_desc
+  date:
+    detail: Jan. 2017
+    i18n: company_b_date
+  job:
+    detail: Market Research Intern
+    i18n: company_b_job
+  icon: fa-black-tie

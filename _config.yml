@@ -14,7 +14,7 @@ author:  # change following line to your infomation.
   name: Dongying Zhou  # Be used at blog posts' author.
   first_name: Dongying  # Be used at index page about me section.
   last_name: Zhou  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/head1.png  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/head1.jpg  # upload your avatar at directory and edit it.
   github_username: dorisZ017  # Leave blank if you don't have now
   linkedin_id: dongying-zhou-a20475b2 # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now

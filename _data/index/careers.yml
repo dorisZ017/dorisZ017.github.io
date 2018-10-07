@@ -54,7 +54,7 @@
   job:
     detail: Student
     i18n: company_b_job
-  icon: fa-far-school
+  icon: fa-plane
 
 - name:
     detail: Graduation from ECUST

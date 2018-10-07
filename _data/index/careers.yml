@@ -26,7 +26,7 @@
   job:
     detail: Community Data Scientist
     i18n: company_a_job
-  icon: fa-code
+  icon: fa-laptop
 
 - name: 
     detail: Internship at Acxiom Corporation

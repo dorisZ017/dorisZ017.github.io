@@ -10,7 +10,7 @@
     detail: Dec. 2018
     i18n: company_a_date
   job:
-    detail: Student
+    detail: Actively seeking full-time opportunities
     i18n: company_a_job
   icon: fa-graduation-cap
 
@@ -26,7 +26,7 @@
   job:
     detail: Community Data Scientist
     i18n: company_a_job
-  icon: fa-laptop-code
+  icon: fa-code
 
 - name: 
     detail: Internship at Acxiom Corporation

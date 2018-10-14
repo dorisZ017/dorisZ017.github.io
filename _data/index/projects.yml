@@ -8,6 +8,14 @@
   img: /static/assets/img/landing/homecredit.png
   desc: A Kaggle competition which goal is to evaluate applicants' capablitiy of repaying their loans based on their profilos and past activities.
 
+- name: Graduate Capstone Project - Chatbot
+  i18n: python
+  gh_user: dorisz017
+  repo: chatbotcap
+  img: /static/assets/img/landing/chatbot.jpg
+  desc: My graduate capstone project is to design and develop a chatbot for a local company. This compnay needs a chatbot to assist their clients in using a BI software the company offers. We used multiple APIs, modeling packages and tools to complete the task. The chatbot has been deployed for production use.
+
+
 - name: Lending Discrimination Analysis based on HMDA dataset
   i18n: python
   gh_user: dorisz017

@@ -19,14 +19,14 @@ Now let's begin!
 
 # Machine Learning for Trading - Part 1
 ## Statistical Analysis of Time Series
-Rolling Statistics
+* Rolling Statistics
 	* Means over a time window (10 days, 20 days…)
 	* `pandas.stats.moments.rolling_mean(values, window)`
-Bollinger Bands
+* Bollinger Bands
 	* Two standard deviations away from the Rolling mean (Low, Up)
 	* Buy signal: drop below Low
 	* Sell signal: go over Up
-Daily returns
+* Daily returns
 	* How much does prices go up and down between days
 	* Daily return for day t: daily_ret[t] = (price[t] / price[t-1]) - 1
 	* Computing in Python:
@@ -35,19 +35,21 @@ Daily returns
 	# df as prices for each day
 	daily_returns.ix[0, :] = 0
 ```
-Cumulative returns
+* Cumulative returns
 	* Cumulative returns from day 0 to day t: cumret[t] = (price[t] / price[0]) - 1
 	* Figure out the code yourself :p
 	
 ## Incomplete Data
-Pristine Data
+* Pristine Data
 	* Messy, not necessarily accurate
 	* Not all stocks trade
-Why data goes missing - what can we do?
+* Why data goes missing - what can we do?
 	* Company get acquired, so the stock disappeared
 	* Broken lines: some companies sometimes trading sometimes not trading
 	* What can we do: _Fill forward_ from last valid value. For starting dates, _Fill backward_
+
 	<img src="{{ site.img_path }}/MLforTrading/part1-1.png", sizes="30%">
+	
 	* Reason to do this: Avoid associating with feature
 	* Code in Python: `pandas.DataFrame.fillna()`
 	* Fill forward: `fillna(method='ffill', inplace=TRUE)`
@@ -55,7 +57,7 @@ Why data goes missing - what can we do?
 	* Be sure to run _fill forward_ first and then _fill backward_
 
 ## Histograms and scatter plots
-A closer look at daily returns - Histograms
+* A closer look at daily returns - Histograms
 	* Distribution of daily returns values: standard deviation, mean, Kurtosis
 	* Kurtosis: How different the distribution is from Gaussian distribution
 	* Positive Kurtosis: The distribution has more values on tails than Gaussian distribution - fat tails

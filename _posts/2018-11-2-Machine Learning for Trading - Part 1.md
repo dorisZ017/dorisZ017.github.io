@@ -21,7 +21,6 @@ Now let's begin!
 * Rolling Statistics
 
 	* Means over a time window (10 days, 20 days…)
-
 	* `pandas.stats.moments.rolling_mean(values, window)`
 
 
@@ -74,7 +73,7 @@ Now let's begin!
 
 	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" width="40%">
 
-	* Reason to do this: Avoid associating with feature
+	* Reason to do this: Avoid associating with future
 
 	* Code in Python: `pandas.DataFrame.fillna()`
 

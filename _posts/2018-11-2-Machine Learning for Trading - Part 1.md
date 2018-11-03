@@ -17,19 +17,21 @@ I find taking notes while watching video to be a great way of learning from MOOC
 
 Now let's begin!
 
-# Machine Learning for Trading - Part 1
 ## Statistical Analysis of Time Series
 * Rolling Statistics
 	* Means over a time window (10 days, 20 days…)
 	* `pandas.stats.moments.rolling_mean(values, window)`
+
 * Bollinger Bands
 	* Two standard deviations away from the Rolling mean (Low, Up)
 	* Buy signal: drop below Low
 	* Sell signal: go over Up
+
 * Daily returns
 	* How much does prices go up and down between days
 	* Daily return for day t: daily_ret[t] = (price[t] / price[t-1]) - 1
 	* Computing in Python:
+	
 ```
 	daily_returns[1:] = (df[1:] / df[:-1].values) - 1
 	# df as prices for each day
@@ -43,6 +45,7 @@ Now let's begin!
 * Pristine Data
 	* Messy, not necessarily accurate
 	* Not all stocks trade
+
 * Why data goes missing - what can we do?
 	* Company get acquired, so the stock disappeared
 	* Broken lines: some companies sometimes trading sometimes not trading

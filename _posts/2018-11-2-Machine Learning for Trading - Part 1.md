@@ -18,54 +18,85 @@ I find taking notes while watching video to be a great way of learning from MOOC
 Now let's begin!
 
 ## Statistical Analysis of Time Series
+
 * Rolling Statistics
+
 	* Means over a time window (10 days, 20 days…)
+
 	* `pandas.stats.moments.rolling_mean(values, window)`
+
 
 * Bollinger Bands
 	* Two standard deviations away from the Rolling mean (Low, Up)
+
 	* Buy signal: drop below Low
+
 	* Sell signal: go over Up
+
 
 * Daily returns
 	* How much does prices go up and down between days
+
 	* Daily return for day t: daily_ret[t] = (price[t] / price[t-1]) - 1
+
 	* Computing in Python:
-	
+
+
 ```
 	daily_returns[1:] = (df[1:] / df[:-1].values) - 1
 	# df as prices for each day
 	daily_returns.ix[0, :] = 0
 ```
 * Cumulative returns
+
 	* Cumulative returns from day 0 to day t: cumret[t] = (price[t] / price[0]) - 1
+
 	* Figure out the code yourself :p
+
 	
 ## Incomplete Data
+
 * Pristine Data
+
 	* Messy, not necessarily accurate
+
 	* Not all stocks trade
 
 * Why data goes missing - what can we do?
+
 	* Company get acquired, so the stock disappeared
+
 	* Broken lines: some companies sometimes trading sometimes not trading
+
 	* What can we do: _Fill forward_ from last valid value. For starting dates, _Fill backward_
+
 
 	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" width="30%">
 
 	* Reason to do this: Avoid associating with feature
+
 	* Code in Python: `pandas.DataFrame.fillna()`
+
 	* Fill forward: `fillna(method='ffill', inplace=TRUE)`
+
 	* Fill backward:  `fillna(method='bfill', inplace=TRUE)`
+
 	* Be sure to run _fill forward_ first and then _fill backward_
 
 ## Histograms and scatter plots
+
 * A closer look at daily returns - Histograms
+
 	* Distribution of daily returns values: standard deviation, mean, Kurtosis
+
 	* Kurtosis: How different the distribution is from Gaussian distribution
+	
 	* Positive Kurtosis: The distribution has more values on tails than Gaussian distribution - fat tails
+
 	* Negative Kurtosis: The distribution has fewer values on tails than Gaussian distribution - skinny tails
+
 	* Calculating Kurtosis: `df.kurtosis`
+
 	* Plotting in Python:
 
 ```

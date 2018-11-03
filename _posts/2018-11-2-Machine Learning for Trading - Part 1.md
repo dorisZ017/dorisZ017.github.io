@@ -21,6 +21,7 @@ Now let's begin!
 * Rolling Statistics
 
 	* Means over a time window (10 days, 20 days…)
+	
 	* `pandas.stats.moments.rolling_mean(values, window)`
 
 

@@ -48,7 +48,7 @@ Now let's begin!
 	* Broken lines: some companies sometimes trading sometimes not trading
 	* What can we do: _Fill forward_ from last valid value. For starting dates, _Fill backward_
 
-	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" sizes="30%">
+	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" width="30%">
 
 	* Reason to do this: Avoid associating with feature
 	* Code in Python: `pandas.DataFrame.fillna()`
@@ -64,6 +64,7 @@ Now let's begin!
 	* Negative Kurtosis: The distribution has fewer values on tails than Gaussian distribution - skinny tails
 	* Calculating Kurtosis: `df.kurtosis`
 	* Plotting in Python:
+
 ```
 	# Plot histogram
 	daily_returns['SPY'].hist(bins=20) # Bins can be set or used default

@@ -48,8 +48,8 @@ Now let's begin!
 	* Broken lines: some companies sometimes trading sometimes not trading
 	* What can we do: _Fill forward_ from last valid value. For starting dates, _Fill backward_
 
-	<img src="{{ site.img_path }}/MLforTrading/part1-1.png", sizes="30%">
-	
+	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" sizes="30%">
+
 	* Reason to do this: Avoid associating with feature
 	* Code in Python: `pandas.DataFrame.fillna()`
 	* Fill forward: `fillna(method='ffill', inplace=TRUE)`
@@ -80,5 +80,7 @@ Now let's begin!
 	daily_returns['XOM'].hist(bins=20, label='XOM')
 	plt.legend(loc='upper right')
 	plt.show()
-
 ```
+* To be continued...
+
+

@@ -8,7 +8,6 @@ categories: [Machine Learning]
 tags: [Machine Learning, Python, Data Science, Trading, Stock Market, Udacity]
 icon: icon-html
 ---
-
 # Introduction
 
 Recently I have just started working with a group of aspiring data scientists on a project through [Method Data Science](http://methoddatascience.com/), where we are tasked with building a trading algorithm that recommends optimal timing fot trading stocks for our client company: Indicate - AI For Trading. However I am fairly new to this field so I decided to begin by taking [Machine Learning for Trading](https://classroom.udacity.com/courses/ud501) course offered by Udacity. The course started by introducing data processing with Pandas and Numpy, which I am already familiar with. So I begin the course from Lesson 5, which introduced some concepts new to me.
@@ -27,6 +26,7 @@ Now let's begin!
 
 
 * Bollinger Bands
+	
 	* Two standard deviations away from the Rolling mean (Low, Up)
 
 	* Buy signal: drop below Low
@@ -35,6 +35,7 @@ Now let's begin!
 
 
 * Daily returns
+	
 	* How much does prices go up and down between days
 
 	* Daily return for day t: daily_ret[t] = (price[t] / price[t-1]) - 1
@@ -71,7 +72,7 @@ Now let's begin!
 	* What can we do: _Fill forward_ from last valid value. For starting dates, _Fill backward_
 
 
-	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" width="30%">
+	<img src="{{ site.img_path }}/MLforTrading/part1-1.png" width="40%">
 
 	* Reason to do this: Avoid associating with feature
 
@@ -90,7 +91,7 @@ Now let's begin!
 	* Distribution of daily returns values: standard deviation, mean, Kurtosis
 
 	* Kurtosis: How different the distribution is from Gaussian distribution
-	
+
 	* Positive Kurtosis: The distribution has more values on tails than Gaussian distribution - fat tails
 
 	* Negative Kurtosis: The distribution has fewer values on tails than Gaussian distribution - skinny tails
@@ -116,6 +117,7 @@ Now let's begin!
 	plt.legend(loc='upper right')
 	plt.show()
 ```
-* To be continued...
+
+* To be continued... (Updated 11/2/2018)
 
 

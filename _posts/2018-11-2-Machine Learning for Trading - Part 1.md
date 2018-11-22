@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes for Udacity - Machine Learning for Trading"
+title:  "Udacity - Machine Learning for Trading - Part 1"
 date:   2018-11-2
 desc: "Study notes"
 keywords: "Python, Data Science, Machine Learning, Trading, Stock Market, Udacity"
@@ -118,6 +118,92 @@ Now let's begin!
 	plt.show()
 ```
 
-* To be continued... (Updated 11/2/2018)
+* A closer look at daily returns - Scatterplots 
+
+	* Concepts: Tl; Dr
+
+	* Plot SPY vs XOM in Python
+	
+* Real world use of Kurtosis
+
+	* Issue with assuming normal distribution: Ignoring kurtosis
+
+	* That’s it??
+	
+## Sharpe ratio and other portfolio statistics
+
+* Daily portfolio values
+
+	* Example portfolio: 
+
+```
+start_val = 1000000
+start_date = 2009-1-1
+end_date = 2011-12-31
+symbols = ['SPY', 'XOM', GOOG', 'GLD']
+allocs = [0.4, 0.4, 0.1, 0.1]
+
+```
+* How to calculate the total value of portfolios day by day?
+
+	1. Normalize each day’s prices to first day
+
+	2. Multiply by  allocations to get allocated values
+
+	3. Multiply by initial investment to get the real value of investment each day over time
+
+	4. Sum each row across columns to get portfolio value of each day
+
+![](Machine%20Learning%20for%20Trading%20-%20Part%201/Screen%20Shot%202018-11-06%20at%201.28.15%20PM.png)
+* Portfolio statistics
+
+	* Daily return of the first day is 0
+
+	* Key statistics: 
+
+		* cumulative return 
+
+		* average daily return 
+
+		* std of daily return
+
+		* Sharpe Ratio
+
+* Sharpe Ratio: risk adjusted return
+
+	* All else being equal, lower risk / higher return is better
+
+	* Risk free rate of return approximation:
+
+		* LIBOR
+
+		* 3 month T-bill
+
+		* 0%
+
+	* Computing: SR = E(Rp - Rf) / std(Rp - Rf) = mean(daily_return - daily_rf) / std(daily_return)
+
+	* Rp: Return rate on the portfolio, Rf: Risk free rate of return
+
+	* Sharpe Ratio is an annual measure, which can vary widely depending on how frequently you sample 
+
+	* Make adjustment if not sampled annually: SR_annualized = K * SR
+
+		* K = sqrt(number of samples per year)
+
+		* daily K = sqrt(252), monthly K = sqrt(12), weekly K = sqrt(52)
+		
+## Optimizers: Building a parameterized model
+
+* What is an optimizer? Basic common knowledge
+
+* Minimization example: Basic common knowledge again
+
+* Minimizer in Python using scipy: `scipy.optimize.minimize(f, Xguess, method, options)`
+
+* Convex problems: Basic calculus
+
+* Building a parameterized model: Building a basic linear regression model
+
 
 
